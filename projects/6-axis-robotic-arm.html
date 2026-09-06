@@ -8,7 +8,7 @@
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
@@ -35,8 +35,13 @@
     <p class="project-meta">Personal project</p>
   </div>
 
-  <div class="media-frame">
-    <img src="../assets/img/arm-hero.jpg" alt="Assembled 6-axis robotic arm on a desk" />
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube.com/embed/U0ZhAC6iEyQ"
+      title="6-Axis Robotic Arm demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
   </div>
 
   <div class="project-body">
@@ -50,6 +55,11 @@
       GUI, embedded programming in C, implementing WiFi communication, and developing
       closed-loop motor control algorithms.
     </p>
+
+    <figure>
+      <img src="../assets/img/arm-hero.jpg" alt="Assembled 6-axis robotic arm on a desk" />
+      <figcaption>The assembled arm</figcaption>
+    </figure>
 
     <div class="btn-row">
       <a class="btn" href="https://github.com/Mazda-F" target="_blank" rel="noopener">
@@ -224,7 +234,6 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>&copy; <span id="year"></span> Mazda Farrahi</span>
-    <span>Built with HTML, CSS &amp; JS — hosted on GitHub Pages</span>
   </div>
 </footer>
 
