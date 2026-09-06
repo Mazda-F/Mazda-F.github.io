@@ -1,4 +1,4 @@
-# mazdaf.com — portfolio
+# Mazda-F, portfolio
 
 Personal portfolio site, built with plain HTML/CSS/JS.
 
