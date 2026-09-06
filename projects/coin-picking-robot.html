@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coin Picking Robot — Mazda Farrahi</title>
+<meta name="description" content="A remote-controlled metal-detecting robot built for UBC ELEC 291." />
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar">
+    <a class="site-name" href="../index.html">Mazda Farrahi</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="self-balancing-robot.html">Self-Balancing Robot</a></li>
+      <li><a href="6-axis-robotic-arm.html">6-Axis Robotic Arm</a></li>
+      <li><a href="coin-picking-robot.html" class="active">Coin Picking Robot</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle dark mode">&#9788;/&#9789;</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <div class="project-header">
+    <a class="back-link" href="../index.html">&larr; Back to projects</a>
+    <h1>Coin Picking Robot</h1>
+    <p class="project-meta">UBC ELEC 291 &middot; team project</p>
+  </div>
+
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube.com/embed/3Kg1On5yARE"
+      title="Coin Picking Robot demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="project-body">
+
+    <p>
+      This project is from the 2nd-year design studio course at UBC for electrical
+      engineering students. The goal was to create both the hardware and software for a
+      remote-controlled robot that can detect metals using an inductor and oscillator
+      circuit, drive motors with H-bridge circuits, and implement communication between
+      two microcontrollers (STM32 and EFM8). For extra functionality, my group and I
+      developed a 1-axis mechanism with an electromagnet that could be remotely controlled
+      to collect small metal objects such as coins.
+    </p>
+
+    <h2>Team</h2>
+    <p>
+      This was a group project with five other electrical engineering students at UBC:
+    </p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/andyfengineer/" target="_blank" rel="noopener">Andy Feng</a></li>
+      <li><a href="https://www.linkedin.com/in/sophia-cockram-50938924a/" target="_blank" rel="noopener">Sophia Cockram</a></li>
+      <li><a href="https://www.linkedin.com/in/bradydoyle/" target="_blank" rel="noopener">Brady Doyle</a></li>
+      <li><a href="https://www.linkedin.com/in/soodadarsh/" target="_blank" rel="noopener">Adarsh Sood</a></li>
+      <li><a href="https://www.linkedin.com/in/faaiqmajeed/" target="_blank" rel="noopener">Faaiq Majeed</a></li>
+    </ul>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Mazda Farrahi</span>
+    <span>Built with HTML, CSS &amp; JS — hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

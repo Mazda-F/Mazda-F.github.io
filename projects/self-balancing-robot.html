@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Self-Balancing Robot — Mazda Farrahi</title>
+<meta name="description" content="A two-wheeled self-balancing inverted-pendulum robot built for UBC ELEC 391." />
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar">
+    <a class="site-name" href="../index.html">Mazda Farrahi</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="self-balancing-robot.html" class="active">Self-Balancing Robot</a></li>
+      <li><a href="6-axis-robotic-arm.html">6-Axis Robotic Arm</a></li>
+      <li><a href="coin-picking-robot.html">Coin Picking Robot</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle dark mode">&#9788;/&#9789;</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <div class="project-header">
+    <a class="back-link" href="../index.html">&larr; Back to projects</a>
+    <h1>Self-Balancing Robot</h1>
+    <p class="project-meta">
+      UBC ELEC 391 &middot; with
+      <a href="https://www.linkedin.com/in/aqzhou/" target="_blank" rel="noopener">Alex Zhou</a>
+    </p>
+  </div>
+
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube.com/embed/I9QuAMcz9hc"
+      title="Self-Balancing Robot demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="project-body">
+
+    <p>
+      This project was done in collaboration with Alex Zhou for the course ELEC 391 at UBC.
+      The goal was to create a self-balancing, maneuverable two-wheeled inverted pendulum
+      robot. It involved extensive MATLAB simulation and modelling of the physical system
+      and its cascaded PID control system, as well as software and hardware design and
+      integration.
+    </p>
+
+    <figure>
+      <img src="../assets/img/sbr-title.jpg" alt="Self-balancing robot — ELEC 391 project title card" />
+    </figure>
+
+    <div class="btn-row">
+      <a class="btn" href="https://drive.google.com/file/d/1bYAw1rlwZUaqoBukN-ig3Ub3g-CFnvVJ/view?usp=sharing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h5v2H5v12h12v-5h2v7H5V5z"/></svg>
+        Project Documentation
+      </a>
+    </div>
+
+    <div class="callout">
+      Disclaimer: As per UBC's Academic Honesty and Integrity policy, any usage of the
+      resources on this page must be referenced by students. A violation of this policy
+      may result in charges of academic misconduct.
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Mazda Farrahi</span>
+    <span>Built with HTML, CSS &amp; JS — hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
