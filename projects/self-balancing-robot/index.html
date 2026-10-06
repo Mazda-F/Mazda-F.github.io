@@ -1,0 +1,84 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Self-Balancing Robot | Mazda Farrahi </title> <meta name="author" content="Mazda Farrahi"> <meta name="description" content="A two-wheeled, self-balancing inverted-pendulum robot built for UBC ELEC 391, combining MATLAB modelling, cascaded PID control, and embedded hardware design."> <meta name="keywords" content="Mazda Farrahi, robotics, electrical engineering, hardware engineering, PCB design, power electronics, motor control, embedded systems, mechatronics, UBC"> <meta property="og:site_name" content="Mazda Farrahi"> <meta property="og:type" content="website"> <meta property="og:title" content="Mazda Farrahi | Self-Balancing Robot"> <meta property="og:url" content="https://mazda-f.github.io/projects/self-balancing-robot/"> <meta property="og:description" content="A two-wheeled, self-balancing inverted-pendulum robot built for UBC ELEC 391, combining MATLAB modelling, cascaded PID control, and embedded hardware design."> <meta property="og:image" content="https://mazda-f.github.io/assets/img/prof_pic.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Self-Balancing Robot"> <meta name="twitter:description" content="A two-wheeled, self-balancing inverted-pendulum robot built for UBC ELEC 391, combining MATLAB modelling, cascaded PID control, and embedded hardware design."> <meta name="twitter:image" content="https://mazda-f.github.io/assets/img/prof_pic.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Mazda Farrahi"
+        },
+        "url": "https://mazda-f.github.io/projects/self-balancing-robot/",
+        "@type": "WebSite",
+        "description": "A two-wheeled, self-balancing inverted-pendulum robot built for UBC ELEC 391, combining MATLAB modelling, cascaded PID control, and embedded hardware design.",
+        "headline": "Self-Balancing Robot",
+        
+        "sameAs": ["https://www.linkedin.com/in/mazdaf","https://github.com/Mazda-F"],
+        
+        "name": "Mazda Farrahi",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%96&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://mazda-f.github.io/projects/self-balancing-robot/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Mazda</span> Farrahi </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item"> <a class="nav-link" href="/#experience">experience</a> </li> <li class="nav-item"> <a class="nav-link" href="/#projects">projects</a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <style type="text/css">
+    .video-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0 1.5rem; } .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 0.25rem; } .project-meta { color: var(--global-text-color-light); } .paper { margin: 1.5rem 0; padding: 1.25rem 1.5rem; border: 1px solid var(--global-divider-color); border-radius: 0.25rem; } .paper .paper-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.25rem; } .paper .paper-authors, .paper .paper-venue { font-size: 0.95rem; color: var(--global-text-color-light); } .paper .abstract { margin: 0.9rem 0 0; font-size: 0.95rem; } .paper-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; } .paper-links a { font-size: 0.85rem; padding: 0.25rem 0.75rem; border: 1px solid var(--global-theme-color); border-radius: 0.25rem; color: var(--global-theme-color); } .paper-links a:hover { background: var(--global-theme-color); color: var(--global-hover-text-color); text-decoration: none; } .pdf-viewer { width: 100%; height: 85vh; min-height: 600px; border: 1px solid var(--global-divider-color); border-radius: 0.25rem; background: var(--global-card-bg-color); overflow: auto; } .pdf-viewer iframe { width: 100%; height: 100%; border: 0; display: block; } .pdf-viewer canvas { display: block; width: 100%; height: auto; margin: 0 auto 8px; background: #fff; } .pdf-status { padding: 1rem; color: var(--global-text-color-light); font-size: 0.9rem; } .callout { margin: 2rem 0 0; padding: 0.9rem 1.1rem; border-left: 3px solid var(--global-theme-color); background: var(--global-card-bg-color); font-size: 0.9rem; color: var(--global-text-color-light); }
+
+  </style> <div class="post"> <header class="post-header"> <h1 class="post-title">Self-Balancing Robot</h1> <p class="post-description">A two-wheeled, self-balancing inverted-pendulum robot built for UBC ELEC 391, combining MATLAB modelling, cascaded PID control, and embedded hardware design.</p> </header> <article> <p class="project-meta">UBC ELEC 391 · Jan – Apr 2025 · with <a href="https://www.linkedin.com/in/aqzhou/" rel="external nofollow noopener" target="_blank">Alex Zhou</a> · MATLAB/Simulink, C++ (Arduino), Python, Fusion 360</p> <div class="video-embed"> <iframe src="https://www.youtube-nocookie.com/embed/I9QuAMcz9hc" title="Self-Balancing Robot demo" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe> </div> <p>This project was done in collaboration with Alex Zhou for the course ELEC 391 at UBC. The goal was to create a self-balancing, maneuverable two-wheeled inverted pendulum robot. It involved extensive MATLAB simulation and modelling of the physical system and its cascaded PID control system, as well as software and hardware design and integration.</p> <div class="row"> <div class="col-sm-4 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/sbr-front-480.webp 480w,/assets/img/sbr-front-800.webp 800w,/assets/img/sbr-front-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/sbr-front.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" alt="Front view of the final self-balancing robot" title="Final robot" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="col-sm-8 mt-3 mt-md-0 d-flex align-items-center"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/sbr-hardware-480.webp 480w,/assets/img/sbr-hardware-800.webp 800w,/assets/img/sbr-hardware-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/sbr-hardware.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" alt="Diagram of the robot's hardware components: GUI, Arduino with BLE and IMU, ESP32 camera, servo, motor driver and motors" title="Hardware overview" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption">Left: front view of the final robot. Right: overview of the hardware components and how they interact.</div> <h2 id="report">Report</h2> <div class="paper"> <div class="paper-title">Cascaded PID Control of a Two-Wheel Inverted Pendulum Robot</div> <div class="paper-authors"> <strong>Mazda Farrahi</strong>, Qinnan (Alex) Zhou</div> <div class="paper-venue">ELEC 391 final report, Electrical and Computer Engineering, The University of British Columbia, April 2025</div> <p class="abstract"><strong>Abstract.</strong> This project report paper details the entire process of implementing a self-balancing, maneuverable two-wheeled inverted pendulum robot. Main aspects include system modeling, control simulation, and careful considerations pertaining to microcontroller programming, PID setup, and system model validation.</p> <div class="paper-links"> <a href="/assets/pdf/ELEC391_Final_Report.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> PDF</a> <a href="/assets/pdf/ELEC391_Final_Report.pdf" download=""><i class="fa-solid fa-download"></i> Download</a> <a href="https://drive.google.com/file/d/1bYAw1rlwZUaqoBukN-ig3Ub3g-CFnvVJ/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-folder-open"></i> Project documentation</a> </div> </div> <div class="pdf-viewer" id="pdf-viewer" data-src="/assets/pdf/ELEC391_Final_Report.pdf"> <noscript> <iframe src="/assets/pdf/ELEC391_Final_Report.pdf" title="ELEC 391 final report"></iframe> </noscript> </div> <div class="callout"> Disclaimer: As per UBC's Academic Honesty and Integrity policy, any usage of the resources on this page must be referenced by students. A violation of this policy may result in charges of academic misconduct. </div> <script>
+  // Use the browser's built-in PDF viewer where it exists (desktop browsers).
+  // Where it doesn't (most phones), render every page with PDF.js instead.
+  (function () {
+    var box = document.getElementById("pdf-viewer");
+    var src = box.getAttribute("data-src");
+    if (navigator.pdfViewerEnabled) {
+      var frame = document.createElement("iframe");
+      frame.src = src + "#view=FitH";
+      frame.title = "ELEC 391 final report";
+      frame.loading = "lazy";
+      box.appendChild(frame);
+      return;
+    }
+    box.style.height = "auto";
+    box.style.maxHeight = "85vh";
+    var status = document.createElement("div");
+    status.className = "pdf-status";
+    status.textContent = "Loading report…";
+    box.appendChild(status);
+    var lib = document.createElement("script");
+    lib.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";
+    lib.onload = function () {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+      pdfjsLib.getDocument(src).promise.then(function (pdf) {
+        status.remove();
+        var scale = Math.min(2, (window.devicePixelRatio || 1) * 1.5);
+        var chain = Promise.resolve();
+        for (var i = 1; i <= pdf.numPages; i++) {
+          (function (n) {
+            chain = chain.then(function () {
+              return pdf.getPage(n).then(function (page) {
+                var viewport = page.getViewport({ scale: scale });
+                var canvas = document.createElement("canvas");
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+                box.appendChild(canvas);
+                return page.render({ canvasContext: canvas.getContext("2d"), viewport: viewport }).promise;
+              });
+            });
+          })(i);
+        }
+      }).catch(function () {
+        status.textContent = "The report couldn't be displayed here. Use the PDF button above to open it.";
+      });
+    };
+    lib.onerror = function () {
+      status.textContent = "The report couldn't be displayed here. Use the PDF button above to open it.";
+    };
+    document.body.appendChild(lib);
+  })();
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Mazda Farrahi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: October 06, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> </body> </html>
